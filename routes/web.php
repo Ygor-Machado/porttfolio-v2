@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
@@ -30,6 +31,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('about', AboutController::class);
+Route::resource('project', ProjectController::class);
 
 // useless routes
 // Just to demo sidebar dropdown links active states.
