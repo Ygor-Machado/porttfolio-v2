@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
@@ -32,19 +33,6 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('about', AboutController::class);
 Route::resource('project', ProjectController::class);
-
-// useless routes
-// Just to demo sidebar dropdown links active states.
-Route::get('/buttons/text', function () {
-    return view('buttons-showcase.text');
-})->middleware(['auth'])->name('buttons.text');
-
-Route::get('/buttons/icon', function () {
-    return view('buttons-showcase.icon');
-})->middleware(['auth'])->name('buttons.icon');
-
-Route::get('/buttons/text-icon', function () {
-    return view('buttons-showcase.text-icon');
-})->middleware(['auth'])->name('buttons.text-icon');
+Route::resource('category', CategoryController::class);
 
 require __DIR__ . '/auth.php';
