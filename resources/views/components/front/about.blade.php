@@ -3,12 +3,12 @@
         title="Sobre mim"
     />
 
-    <div class="container mx-auto px-6 lg:px-16 mt-10 flex flex-col lg:flex-row items-center justify-center gap-3">
-        <div class="flex-1 lg:mr-10 overflow-hidden">
+    <div class="container mx-auto px-6 lg:px-16 mt-10 flex flex-col lg:flex-row items-center justify-center gap-4">
+        <div class="flex-1 lg:mr-10">
             <img
                 src="/img/DSC00851.jpg"
                 alt="Foto de Ygor"
-                class="w-full max-w-md mx-auto aspect-[3/4] object-cover rounded-[50%/70%] shadow-lg transition-transform duration-500 hover:scale-105"
+                class="w-full max-w-md mx-auto object-cover rounded-[50%/50%] shadow-lg transition-transform duration-500 hover:scale-105"
             />
         </div>
 
