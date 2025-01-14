@@ -3,7 +3,7 @@
         title="Sobre mim"
     />
 
-    <div class="container mx-auto px-6 lg:px-16 mt-10 flex flex-col lg:flex-row items-center justify-center gap-10">
+    <div class="container mx-auto px-6 lg:px-16 mt-10 flex flex-col lg:flex-row items-center justify-center gap-3">
         <div class="flex-1 lg:mr-10 overflow-hidden">
             <img
                 src="/img/DSC00851.jpg"
