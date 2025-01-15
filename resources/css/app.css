@@ -8,6 +8,69 @@
     background-color: transparent !important;
 }
 
+.banner-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
 
+.banner-contact i {
+    margin-right: 7px;
+}
+
+.banner-contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #e01010e3;
+    padding: 0.9em 1.4em;
+    font-size: 0.875rem;
+    position: relative;
+    background: transparent;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.banner-contact a:nth-child(1) {
+    margin-right: 20px;
+}
+
+.banner-contact span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid #e01010e3;
+}
+
+.banner-contact span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+
+.banner-contact a:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #e01010e3;
+}
+
+.banner-contact a:hover{
+    color: #f7f7f7;
+}
 
 

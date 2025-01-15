@@ -17,16 +17,14 @@
             um desenvolvedor focado PHP | Laravel
         </h2>
         <div class="flex justify-center space-x-5 mt-10">
-            <a href="https://github.com/Ygor-Machado" target="_blank" rel="noopener noreferrer"
-               class="flex items-center justify-center px-5 py-2 text-sm font-bold text-red-700 border-4 border-red-700 transition duration-300 group hover:text-white relative">
-                <span class="absolute inset-0 w-full h-full transform scale-0 bg-red-700 transition duration-300 group-hover:scale-100"></span>
-                <span class="relative z-10">GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/ygor-machado-ab33302b4/" target="_blank" rel="noopener noreferrer"
-               class="flex items-center justify-center px-5 py-2 text-sm font-bold text-red-700 border-4 border-red-700 transition duration-300 group hover:text-white relative">
-                <span class="absolute inset-0 w-full h-full transform scale-0 bg-red-700 transition duration-300 group-hover:scale-100"></span>
-                <span class="relative z-10">LinkedIn</span>
-            </a>
+            <div class="banner-contact">
+                <a href="https://github.com/Ygor-Machado" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> GitHub <span></span>
+                </a>
+                <a href="https://www.linkedin.com/in/ygor-machado-ab33302b4/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn <span></span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
