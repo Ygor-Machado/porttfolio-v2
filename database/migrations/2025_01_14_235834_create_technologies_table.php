@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('xp');
             $table->string('icon');
-            $table->enum('category', ['frontend', 'backend']);
+            $table->enum('category', ['F', 'B']);
             $table->timestamps();
         });
     }

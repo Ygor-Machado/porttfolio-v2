@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TechnologyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('about', AboutController::class);
 Route::resource('project', ProjectController::class);
 Route::resource('category', CategoryController::class);
+Route::resource('technology', TechnologyController::class);
 
 Route::get('/', [FrontEndController::class, 'index'])->name('front.index');
 
