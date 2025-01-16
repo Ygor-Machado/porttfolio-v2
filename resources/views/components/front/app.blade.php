@@ -23,5 +23,7 @@
             {{ $slot }}
         </main>
 
+    <x-front.footer />
+
     </body>
 </html>
