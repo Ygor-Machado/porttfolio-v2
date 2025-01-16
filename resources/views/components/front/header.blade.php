@@ -29,7 +29,15 @@
             </svg>
         </button>
 
-        <div x-show="isOpen" @click.away="isOpen = false" class="fixed inset-0 z-50 bg-white bg-opacity-80 md:hidden flex flex-col items-center justify-center gap-8 transition-transform duration-300">
+        <div x-show="isOpen"
+             x-transition:enter="transition transform ease-out duration-300"
+             x-transition:enter-start="translate-y-full opacity-0"
+             x-transition:enter-end="translate-y-0 opacity-100"
+             x-transition:leave="transition transform ease-in duration-300"
+             x-transition:leave-start="translate-y-0 opacity-100"
+             x-transition:leave-end="translate-y-full opacity-0"
+             @click.away="isOpen = false"
+             class="fixed inset-0 z-50 bg-white bg-opacity-80 md:hidden flex flex-col items-center justify-center gap-8">
             <a href="/#inicio" class="text-black text-xl hover:text-gray-800">Inicio</a>
             <a href="/#about" class="text-black text-xl hover:text-gray-800">Sobre</a>
             <a href="/#projects" class="text-black text-xl hover:text-gray-800">Projetos</a>
