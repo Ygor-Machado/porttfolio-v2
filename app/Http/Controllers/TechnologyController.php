@@ -13,7 +13,6 @@ class TechnologyController extends Controller
 
         return view('admin.technologies.index', compact('technologies'));
     }
-
     public function create()
     {
         return view('admin.technologies.create');

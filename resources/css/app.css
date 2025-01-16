@@ -8,6 +8,10 @@
     background-color: transparent !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .banner-contact {
     display: flex;
     justify-content: flex-start;
@@ -71,6 +75,72 @@
 
 .banner-contact a:hover{
     color: #f7f7f7;
+}
+
+.skills {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.skill {
+    margin: 35px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 1px solid #000;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.skill .logo .img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.skill .title {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #292929;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.skill .exp {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #646464;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .skill {
+        width: calc(50% - 40px);
+        border: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill {
+        width: calc(100% - 40px);
+        border-left: none;
+    }
 }
 
 

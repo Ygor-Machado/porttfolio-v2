@@ -1,6 +1,6 @@
-<div class="relative max-w-xl w-full mx-auto overflow-hidden shadow-lg transition-transform transform hover:scale-110 mb-8 mt-8">
+<div id=projects class="relative max-w-xl w-full mx-auto overflow-hidden shadow-lg transition-transform transform hover:scale-110 mb-8 mt-8">
     <div class="overflow-hidden">
-        <img src="/img/projects/{{ $image }}" alt="{{ $name }}" class="w-full h-96 object-cover">
+        <img src={{ asset('img/projects/' . $image) }} alt="{{ $name }}" style="height: 28rem" class="w-full object-cover">
         @error('image')
         <div class="mt-2 text-red-600">
             {{ $message }}

@@ -84,7 +84,7 @@ class ProjectController extends Controller
     private function deleteOldImage($imageName)
     {
         if ($imageName && file_exists(public_path('img/projects/' . $imageName))) {
-            unlink(public_path('img/produtos/' . $imageName));
+            unlink(public_path('img/projects/' . $imageName));
         }
     }
 

@@ -9,7 +9,7 @@
             title="Projetos"
         />
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">
             @foreach($projects as $project)
                 <x-cards.project
                     :name="$project->name"
@@ -23,4 +23,9 @@
             @endforeach
         </div>
     </div>
+
+    <x-front.technologies
+        :frontendTechnologies="$frontendTechnologies"
+        :backendTechnologies="$backendTechnologies"
+    />
 </x-front.app>
