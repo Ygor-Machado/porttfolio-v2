@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "perfect-scrollbar/css/perfect-scrollbar.css";
 @import "tailwindcss/utilities";
+@import "projects/project-card.css";
+@import "projects/project.css";
 
 .dark .ps__rail-y,
 .dark .ps__rail-x {
@@ -142,5 +144,6 @@ html {
         border-left: none;
     }
 }
+
 
 

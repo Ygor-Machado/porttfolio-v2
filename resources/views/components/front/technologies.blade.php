@@ -1,6 +1,6 @@
 <section id="skills">
     <x-front.title
-        title="FrontEnd"
+        title="Front-End"
     />
 
     <div class="skills-container">
@@ -16,7 +16,7 @@
     </div>
 
     <x-front.title
-        title="BackEnd"
+        title="Back-End"
     />
 
     <div class="skills-container">
