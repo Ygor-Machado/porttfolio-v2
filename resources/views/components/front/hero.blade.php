@@ -14,7 +14,7 @@
             </span>
         </div>
         <h2 class="sub-title text-2xl text-slate-400 mt-4">
-            um desenvolvedor focado PHP | Laravel
+            um desenvolvedor focado em PHP | Laravel
         </h2>
         <div class="flex justify-center space-x-5 mt-10">
             <div class="banner-contact">
